@@ -1,3 +1,5 @@
+@import url("./searchbar.css");
+
 :root {
     --darkGreen: #c43d3d;
     --green: #e75542; 
@@ -13,13 +15,16 @@ body {
     margin: 0 5%;
 }
 
-header{
+.margin10 {
     margin: 10px;
 }
+
 
 main {
     padding: 30px;
     display: flex;
+    min-height: 100%;
+
 }
 
 aside {
@@ -27,14 +32,12 @@ aside {
 }
 
 footer {
-    height: 180px;
+    min-height: 180px;
+    height: auto;
     width: 100%;
 
     margin-top: 30px;
     text-align: center;
-
-    position: fixed;
-    bottom: 0;
 }
 
 footer,
@@ -86,7 +89,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav a {
+.borderRadius {
 
     width: 96%;
     padding: 25px 2%;
@@ -186,6 +189,10 @@ h2, H3, H4, p, li {
 .highItem h2, p {
     margin: 15px;
 }
+
+.profile {
+    padding: 2%;
+}
   
 
 /* Computer view */
@@ -212,8 +219,8 @@ h2, H3, H4, p, li {
         margin: 1%;
     }
 
-    nav a {
-        width: 23%;
+    .borderRadius {
+        max-width: 23%;
         padding: 25px 1%;
     }
 
