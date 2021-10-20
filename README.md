@@ -1,23 +1,35 @@
-# covidovky
+# Projekt - statický web zpravodajský portál
 
-- Statický funkční web
-- Stránky (provázané odkazy):
-o Plnohodnotná úvodní stránka (Homepage)
-o Kategorie
-o Detail článku
-o Komentáře i s vkládáním (může být součást Detailu
-článku)
-o Výsledky vyhledávání (+ vyhledávací box na všech
-stránkách)
-o Redakce – kontakty, výpis členů
-- Všechny odkazy jsou funkční
-o Např.: více položek menu může vést na jednu
-kategorii, odkazy ve výpisu článků vedou na jeden
-Detail
-- Web dává smysl
-o Delší texty (odstavce) mohou obsahovat lorem ipsum
-- Viditelné označení, že se jedná o studentský projekt
-o Ideálně v patičce každé stránky
-- Důraz na použitelnost
-o struktura a informační architektura, navigace,
-vyhledávání, drobečková navigace, …
+## Obsah
+
+- [x] Statický funkční web
+- [ ] Stránky (provázané odkazy) -> každí odkaz nekam vede! (klidně na stejnou věc)
+- [x] Plnohodnotná úvodní stránka(Homepage)
+- [ ] Kategorie
+- [x] Detailčlánku
+- [ ] Komentáře článku pod detailem
+- [x] Vyhlédávání v horním menu
+- [x] Redakce -> vyps členů
+- [ ] Žadný lorem ipsum srozumitelný texty
+- [x] Informace že se jedná o studenský web
+
+## Technické požadavky
+- [x] Responzivní design
+- [x] Vytvořeno přístupem Mobile-first
+- [x] Nejnovější HTML5 (ne XHTML, HTML 4)
+- [x] Sémantické elementy (správně použité)
+
+## Nutné elementy
+- [ ] main (min10x)
+- [ ] article (min10x)
+- [x] section(min.3x)
+- [x] header (min. 2x, z toho 1x uvnitř article)
+- [x] footer (min. 2x)
+- [x] aside
+- [x] p
+- [ ] ul/li
+- [x] figure/figcaption
+- [x] img
+- [x] h1/h2/h3
+
+

@@ -1,3 +1,5 @@
+@import url("./searchbar.css");
+
 :root {
     --darkGreen: #c43d3d;
     --green: #e75542; 
@@ -13,17 +15,29 @@ body {
     margin: 0 5%;
 }
 
-header{
+.margin10 {
     margin: 10px;
 }
+
 
 main {
     padding: 30px;
     display: flex;
+    min-height: 100%;
+
 }
 
 aside {
     padding: 0px 5% 10px;
+}
+
+footer {
+    min-height: 180px;
+    height: auto;
+    width: 100%;
+
+    margin-top: 30px;
+    text-align: center;
 }
 
 footer,
@@ -32,6 +46,10 @@ aside {
 
     color: var(--white);
     background: var(--green);
+}
+
+aside img {
+    max-height:100%; max-width:100%;
 }
 
 /* Image row */
@@ -56,7 +74,7 @@ aside {
     justify-content: center;
     align-items: center;
 
-    background-image: url("book.jpg");
+    background-image: url("../image/book.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -71,7 +89,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav a {
+.borderRadius {
 
     width: 96%;
     padding: 25px 2%;
@@ -135,6 +153,48 @@ h2, H3, H4, p, li {
     color: var(--white);
 }
 
+
+.highItem{
+    width: 96%;
+    position: relative;
+    float:left;
+    background-color: var(--green);
+    
+    float: left;
+    margin: 2%;
+    padding-top: 235px;
+
+    -webkit-transition: margin 0.3s ease-out;
+    -moz-transition: margin 0.3s ease-out;
+    -o-transition: margin 0.3s ease-out;
+    transition: .7s;
+    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 9%);
+    
+
+    background-image: url("../image/cap.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border-top: var(--darkGreen);
+    border-width: 10px;
+    border-radius: 10px;
+  
+}
+
+.highItem:hover {
+    cursor:pointer;
+    margin-top: -8px;
+}
+
+.highItem h2, p {
+    margin: 15px;
+}
+
+.profile {
+    padding: 2%;
+}
+  
+
 /* Computer view */
 @media only screen and (min-width: 1060px) {
 
@@ -144,8 +204,23 @@ h2, H3, H4, p, li {
         display: flex;
     }
 
-    nav a {
-        width: 23%;
+    .leftColumn {
+        width: 50%;
+        float: left;
+    }
+
+    .rightColumn {
+        width: 50%;
+        float: right;
+    }
+
+    .highItem {
+        width: 31.33%;
+        margin: 1%;
+    }
+
+    .borderRadius {
+        max-width: 23%;
         padding: 25px 1%;
     }
 
@@ -160,7 +235,7 @@ h2, H3, H4, p, li {
     }
 
     .wrapper {
-        width: 1026px; 
+        width: 1155px; 
         margin: 0 auto;
     }
 }
