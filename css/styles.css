@@ -34,6 +34,10 @@ aside {
     background: var(--green);
 }
 
+aside img {
+    max-height:100%; max-width:100%;
+}
+
 /* Image row */
 .button-like-view {
     width: 30%;
@@ -56,7 +60,7 @@ aside {
     justify-content: center;
     align-items: center;
 
-    background-image: url("book.jpg");
+    background-image: url("../image/book.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -135,6 +139,45 @@ h2, H3, H4, p, li {
     color: var(--white);
 }
 
+
+.highItem{
+    width: 330px;
+    position: relative;
+    float:left;
+    background-color: var(--green);
+    
+    float: left;
+    margin-right: 55px;
+    padding-top: 235px;
+    
+
+    -webkit-transition: margin 0.3s ease-out;
+    -moz-transition: margin 0.3s ease-out;
+    -o-transition: margin 0.3s ease-out;
+    transition: .7s;
+    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 9%);
+    
+
+    background-image: url("../image/cap.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border-top: var(--darkGreen);
+    border-width: 10px;
+    border-radius: 10px;
+  
+}
+
+.highItem:hover {
+    cursor:pointer;
+    margin-top: -8px;
+}
+
+.highItem h2, p {
+    margin: 15px;
+}
+  
+
 /* Computer view */
 @media only screen and (min-width: 1060px) {
 
@@ -160,7 +203,7 @@ h2, H3, H4, p, li {
     }
 
     .wrapper {
-        width: 1026px; 
+        width: 1155px; 
         margin: 0 auto;
     }
 }
