@@ -1,0 +1,179 @@
+:root {
+    --darkGreen: #c43d3d;
+    --green: #e75542; 
+    --white: #ffffff
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+header{
+    margin: 10px;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+}
+
+aside {
+    padding: 0px 5% 10px;
+}
+
+footer,
+aside {
+    border-top: 20px solid var(--darkGreen);
+
+    color: var(--white);
+    background: var(--green);
+}
+
+/* Image row */
+.button-like-view {
+    width: 30%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 1rem;
+    line-height: normal;
+    text-align: center;
+
+    color: var(--white);
+    background-color: rgba(107, 107, 107, 0.4);
+}
+
+.full-image-label {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("book.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+/* Menu */
+header a {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+
+    width: 96%;
+    padding: 25px 2%;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--white);
+    background: var(--green);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background: var(--darkGreen);
+}
+
+#logo {
+    float: left;
+    color: var(--green);
+    text-decoration: none;
+}
+#logo h1{
+    margin-bottom: 0px;
+}
+
+/* Contact form */
+form {
+    display: grid;
+}
+
+label {
+	text-align: left;
+    margin: 10px;
+	font-size: 1.4em;
+}
+
+.roundInput {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 20px 0px 20px 0px;
+    border: none;
+
+    background-color: var(--darkGreen);
+    color: var(--white);
+}
+
+.borderRadius {
+    border-radius: 5px;
+}
+
+h2, H3, H4, p, li {
+    color: var(--white);
+}
+
+/* Computer view */
+@media only screen and (min-width: 1060px) {
+
+
+    nav {
+        padding-left: 90px;
+        display: flex;
+    }
+
+    nav a {
+        width: 23%;
+        padding: 25px 1%;
+    }
+
+    article {
+        float: left;
+        width: 57%;
+    }
+
+    aside {
+        float: right;
+        width: 28%;
+    }
+
+    .wrapper {
+        width: 1026px; 
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background: #171717;
+	}
+
+    :root {
+        --darkGreen: #c43d3d;
+        --green: #e75542; 
+        --white: #ccc
+    }
+}
