@@ -175,7 +175,7 @@ h2, H3, H4, p, li {
     background-color: var(--green);
 
     float: left;
-    /*margin: 2%;*/
+    margin-top: 5px;
     padding-top: 235px;
 
     -webkit-transition: margin 0.3s ease-out;
@@ -191,7 +191,7 @@ h2, H3, H4, p, li {
 
     border-top: var(--darkGreen);
     border-width: 10px;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 .firstHighItem{
   margin-top: 50px;
@@ -199,7 +199,7 @@ h2, H3, H4, p, li {
 
 .highItem:hover {
     cursor:pointer;
-    margin-top: -8px;
+    margin-top: 5px;
 }
 
 .highItem h2, p {
@@ -253,6 +253,8 @@ h2, H3, H4, p, li {
     .highItem {
         width: 31.33%;
         margin: 1%;
+        border-radius: 10px;
+        margin-top: 25px;
     }
 
     .borderRadius {
