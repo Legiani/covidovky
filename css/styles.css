@@ -2,7 +2,7 @@
 
 :root {
     --darkGreen: #c43d3d;
-    --green: #e75542; 
+    --green: #e75542;
     --white: #ffffff
 }
 
@@ -11,17 +11,19 @@ body {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    /*margin: 0 5%;*/
 }
 
 .margin10 {
     margin: 10px;
 }
-
+img{
+  width: 100%;
+}
 
 main {
-    padding: 30px;
+  /*  padding: 30px;*/
     display: flex;
     min-height: 100%;
 
@@ -38,6 +40,8 @@ footer {
 
     margin-top: 30px;
     text-align: center;
+    clear: both;
+    position: relative;
 }
 
 footer,
@@ -54,7 +58,7 @@ aside img {
 
 /* Image row */
 .button-like-view {
-    width: 30%;
+    width: 250px;
     margin: 10px;
     padding: 5px;
     border-radius: 1rem;
@@ -76,7 +80,7 @@ aside img {
 
     background-image: url("../image/book.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
 
@@ -91,7 +95,7 @@ nav ul {
 
 .borderRadius {
 
-    width: 96%;
+    width: 90%;
     padding: 25px 2%;
     margin: 15px;
     text-align: center;
@@ -100,6 +104,17 @@ nav ul {
 
     color: var(--white);
     background: var(--green);
+}
+.borderAside{
+  width: 100%;
+  padding: 25px 0px;
+  /*margin: 15px;*/
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: var(--white);
+  background: var(--green);
 }
 
 nav a:hover {
@@ -128,7 +143,6 @@ label {
 }
 
 .roundInput {
-    width: 100%;
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -155,13 +169,13 @@ h2, H3, H4, p, li {
 
 
 .highItem{
-    width: 96%;
+    width: 100%;
     position: relative;
     float:left;
     background-color: var(--green);
-    
+
     float: left;
-    margin: 2%;
+    /*margin: 2%;*/
     padding-top: 235px;
 
     -webkit-transition: margin 0.3s ease-out;
@@ -169,7 +183,7 @@ h2, H3, H4, p, li {
     -o-transition: margin 0.3s ease-out;
     transition: .7s;
     box-shadow: 0 15px 20px 0 rgb(0 0 0 / 9%);
-    
+
 
     background-image: url("../image/cap.jpg");
     background-repeat: no-repeat;
@@ -178,7 +192,9 @@ h2, H3, H4, p, li {
     border-top: var(--darkGreen);
     border-width: 10px;
     border-radius: 10px;
-  
+}
+.firstHighItem{
+  margin-top: 50px;
 }
 
 .highItem:hover {
@@ -193,7 +209,21 @@ h2, H3, H4, p, li {
 .profile {
     padding: 2%;
 }
-  
+.newDetailText p:first-of-type{
+  display: block;
+  font-size: 1em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.newDetailText p:last-of-type{
+  font-size: 0.75em;
+  font-style: italic;
+  display: block;
+}
+
 
 /* Computer view */
 @media only screen and (min-width: 1060px) {
@@ -213,6 +243,12 @@ h2, H3, H4, p, li {
         width: 50%;
         float: right;
     }
+    .rightColumn h2{
+      margin-left: 10px;
+    }
+    .leftColumn h2{
+      margin-left: 10px;
+    }
 
     .highItem {
         width: 31.33%;
@@ -231,14 +267,31 @@ h2, H3, H4, p, li {
 
     aside {
         float: right;
-        width: 28%;
+        width: 28%; 
     }
 
     .wrapper {
-        width: 1155px; 
+        width: 1155px;
         margin: 0 auto;
     }
+    .button-like-view{
+      width: 500px;
+    }
+    .borderAside{
+      width: 39%;
+    }
+    .roundInput{
+      width: 100%;
+    }
+    .submit{
+      margin-left: 18px;
+
+    }
+
+
+
 }
+
 
 
 @media screen and (prefers-color-scheme: dark) {
@@ -248,7 +301,7 @@ h2, H3, H4, p, li {
 
     :root {
         --darkGreen: #c43d3d;
-        --green: #e75542; 
+        --green: #e75542;
         --white: #ccc
     }
 }
