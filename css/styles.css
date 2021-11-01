@@ -56,6 +56,26 @@ aside {
 aside img {
     max-height:100%; max-width:100%;
 }
+textarea::-webkit-input-placeholder {
+  color: #757564;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #757564;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #757564;
+}
+
+textarea:-ms-input-placeholder {
+  color: #757564;
+}
+
+textarea::placeholder {
+  color: #757564;
+}
+
 
 /* Image row */
 .button-like-view {
@@ -127,7 +147,6 @@ nav ul {
 }
 
 .borderRadius {
-
     width: 90%;
     padding: 25px 2%;
     margin: 15px;
@@ -148,8 +167,17 @@ nav ul {
 
   color: var(--white);
   background: var(--green);
+  text-decoration: none;
 }
 
+.borderAside a{
+  text-decoration: none;
+}
+
+.borderAside a:hover{
+  text-decoration: underline;
+  color: #887c7c;
+}
 nav a:hover {
     text-decoration: underline;
     background: var(--darkGreen);
@@ -191,15 +219,33 @@ label {
     background-color: var(--darkGreen);
     color: var(--white);
 }
+.submitComent {
+    width: 200px;
+    padding: 14px 20px;
+    margin: 20px 0px 20px 0px;
+    border: none;
+
+    background-color: var(--darkGreen);
+    color: var(--white);
+    float: right;
+    transition: .3s;
+}
+.submitComent:hover{
+  background-color: #75756d;
+
+}
 
 .borderRadius {
     border-radius: 5px;
 }
 
-h2, H3, H4, p, li {
+h2, H3, H4, p, li, span, label {
     color: var(--white);
 }
 
+.articleAuthorHead{
+  text-align: center;
+}
 
 .highItem{
     width: 100%;
@@ -281,6 +327,41 @@ h2, H3, H4, p, li {
   float: left;
   margin-top: 20px;
 }
+.right{
+  float: right;
+  width: 100%;
+}
+.rightComent{
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+.autorData img{
+  width: 83%;
+}
+.autorData:hover{
+  opacity: 0.8;
+  background: #e75542;
+}
+
+.textArray{
+  width: 100%;
+  float: left;
+}
+.comentBorderRadius {
+    width: 90%;
+    padding: 25px 2%;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--white);
+    background: var(--green);
+}
+.textAreaComent{
+  min-width: 100%;
+  min-height: 110px;
+}
 
 
 
@@ -297,6 +378,10 @@ h2, H3, H4, p, li {
         width: 50%;
         float: left;
     }
+    .right{
+      width: 39%;
+    }
+
     .rightColumn {
         width: 50%;
         float: right;
@@ -314,6 +399,9 @@ h2, H3, H4, p, li {
     }
     .leftColumn h2{
       margin-left: 10px;
+    }
+    .articleComent{
+      margin-top: 50px;
     }
 
     .highItem {
@@ -363,10 +451,11 @@ h2, H3, H4, p, li {
       width: 500px;
     }
     .borderAside{
-      width: 39%;
+      margin-bottom: 30px;
     }
     .roundInput{
       width: 100%;
+      float: left;
     }
     .submit{
       margin-left: 18px;
