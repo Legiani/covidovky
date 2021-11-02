@@ -30,10 +30,6 @@ main {
 
 }
 
-aside {
-    padding: 0px 5% 10px;
-}
-
 footer {
     min-height: 180px;
     height: auto;
@@ -54,28 +50,8 @@ aside {
 }
 
 aside img {
-    max-height:100%; max-width:100%;
+    max-height:80%; max-width:80%;
 }
-textarea::-webkit-input-placeholder {
-  color: #757564;
-}
-
-textarea:-moz-placeholder { /* Firefox 18- */
-  color: #757564;
-}
-
-textarea::-moz-placeholder {  /* Firefox 19+ */
-  color: #757564;
-}
-
-textarea:-ms-input-placeholder {
-  color: #757564;
-}
-
-textarea::placeholder {
-  color: #757564;
-}
-
 
 /* Image row */
 .button-like-view {
@@ -147,6 +123,7 @@ nav ul {
 }
 
 .borderRadius {
+
     width: 90%;
     padding: 25px 2%;
     margin: 15px;
@@ -167,17 +144,8 @@ nav ul {
 
   color: var(--white);
   background: var(--green);
-  text-decoration: none;
 }
 
-.borderAside a{
-  text-decoration: none;
-}
-
-.borderAside a:hover{
-  text-decoration: underline;
-  color: #887c7c;
-}
 nav a:hover {
     text-decoration: underline;
     background: var(--darkGreen);
@@ -193,14 +161,14 @@ nav a:hover {
 }
 
 /* Contact form */
-form {
+#contactForm {
     display: grid;
 }
 
 label {
 	text-align: left;
-    margin: 10px;
-	font-size: 1.4em;
+  margin: 10px;
+	font-size: 1em;
 }
 
 .roundInput {
@@ -208,6 +176,7 @@ label {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .submit {
@@ -219,34 +188,20 @@ label {
     background-color: var(--darkGreen);
     color: var(--white);
 }
-.submitComent {
-    width: 200px;
-    padding: 14px 20px;
-    margin: 20px 0px 20px 0px;
-    border: none;
-
-    background-color: var(--darkGreen);
-    color: var(--white);
-    float: right;
-    transition: .3s;
-}
-.submitComent:hover{
-  background-color: #75756d;
-
-}
 
 .borderRadius {
     border-radius: 5px;
 }
 
-h2, H3, H4, p, li, span, label {
+h2, H3, H4, p, li, label {
     color: var(--white);
 }
-
-.articleAuthorHead{
-  text-align: center;
+.cursive {
+  font-style: italic;
 }
-
+hr {
+  border-top: var(--white);
+}
 .highItem{
     width: 100%;
     position: relative;
@@ -311,6 +266,7 @@ h2, H3, H4, p, li, span, label {
   transition: 0.4s;
   min-height: 150px;
   border-radius: 5px;
+  margin: 10px;
   float: left;
 }
 .hpArticle:hover{
@@ -320,47 +276,11 @@ h2, H3, H4, p, li, span, label {
 .hpArticle:hover .hpImage{
   opacity: 0.7;
 }
-.hpArticle:first-of-type{
-  margin-top: 50px;
-}
+
 .hpAside{
   float: left;
-  margin-top: 20px;
-}
-.right{
-  float: right;
-  width: 100%;
-}
-.rightComent{
-  float: right;
-  width: 100%;
-  text-align: right;
-}
-.autorData img{
-  width: 83%;
-}
-.autorData:hover{
-  opacity: 0.8;
-  background: #e75542;
-}
-
-.textArray{
-  width: 100%;
-  float: left;
-}
-.comentBorderRadius {
-    width: 90%;
-    padding: 25px 2%;
-    margin: 15px;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: var(--white);
-    background: var(--green);
-}
-.textAreaComent{
-  min-width: 100%;
-  min-height: 110px;
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -378,10 +298,6 @@ h2, H3, H4, p, li, span, label {
         width: 50%;
         float: left;
     }
-    .right{
-      width: 39%;
-    }
-
     .rightColumn {
         width: 50%;
         float: right;
@@ -400,9 +316,6 @@ h2, H3, H4, p, li, span, label {
     .leftColumn h2{
       margin-left: 10px;
     }
-    .articleComent{
-      margin-top: 50px;
-    }
 
     .highItem {
         width: 31.33%;
@@ -412,14 +325,17 @@ h2, H3, H4, p, li, span, label {
     }
 
     .borderRadius {
-        max-width: 23%;
         padding: 25px 1%;
     }
 
     article {
         float: left;
-        width: 57%;
     }
+
+    .autorProfile {
+      width: 57%;
+    }
+
     .hpArticleContainer {
         width: 70%;
         float: left;
@@ -427,20 +343,23 @@ h2, H3, H4, p, li, span, label {
 
     aside {
         float: right;
-        width: 28%;
+        padding: 10px;
+        width: calc(28% - 20px);
     }
 
     .detailArticleContainer{
       margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
     }
 
     .hpAside{
-      width: 22%;
+      width: calc(28% - 20px);
+      float: right;
       border-radius: 5px;
-      margin-left: 11px;
-      margin-top: 50px;
       height: fit-content;
-      padding: 0px 3% 10px;
+
+      margin-top: 10px;
     }
 
     .wrapper {
@@ -451,11 +370,10 @@ h2, H3, H4, p, li, span, label {
       width: 500px;
     }
     .borderAside{
-      margin-bottom: 30px;
+      width: 39%;
     }
     .roundInput{
       width: 100%;
-      float: left;
     }
     .submit{
       margin-left: 18px;
