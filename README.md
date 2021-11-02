@@ -20,7 +20,7 @@
 - [x] Sémantické elementy (správně použité)
 
 ## Nutné elementy
-- [ ] main (min10x) -> ne 4x nedává smysl
+- [ ] main (min10x) -> podle mě má byt jednou na stránce, mužete přidělat víc článků (1stránka == 1 main)
 - [x] article (min10x)
 - [x] section(min.3x)
 - [x] header (min. 2x, z toho 1x uvnitř article)
