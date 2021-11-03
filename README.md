@@ -3,11 +3,11 @@
 ## Obsah
 
 - [x] Statický funkční web
-- [x] Stránky (provázané odkazy) -> každí odkaz nekam vede! (klidně na stejnou věc)
+- [ ] Stránky (provázané odkazy) -> každí odkaz nekam vede! (klidně na stejnou věc)
 - [x] Plnohodnotná úvodní stránka(Homepage)
-- [x] Kategorie
+- [ ] Kategorie
 - [x] Detailčlánku
-- [x] Komentáře článku pod detailem
+- [ ] Komentáře článku pod detailem
 - [x] Vyhlédávání v horním menu
 - [x] Redakce -> vyps členů
 - [ ] Žadný lorem ipsum srozumitelný texty
@@ -20,14 +20,14 @@
 - [x] Sémantické elementy (správně použité)
 
 ## Nutné elementy
-- [ ] main (min10x) -> podle mě má byt jednou na stránce, mužete přidělat víc článků (1stránka == 1 main)
-- [x] article (min10x)
+- [ ] main (min10x)
+- [ ] article (min10x)
 - [x] section(min.3x)
 - [x] header (min. 2x, z toho 1x uvnitř article)
 - [x] footer (min. 2x)
 - [x] aside
 - [x] p
-- [x] ul/li
+- [ ] ul/li
 - [x] figure/figcaption
 - [x] img
 - [x] h1/h2/h3

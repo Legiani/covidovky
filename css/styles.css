@@ -7,12 +7,11 @@
     --lightGray: #a9a9a9;
     --black: #171717;
     --lightBlack: #353535;
+
 }
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-
-    background: var(--black)
 }
 
 .wrapper {
@@ -31,6 +30,10 @@ main {
     min-height: 100%;
 }
 
+aside {
+    padding: 0px 5% 10px;
+}
+
 footer {
     min-height: 180px;
     height: auto;
@@ -44,15 +47,35 @@ footer {
 
 footer,
 aside {
-    border-top: 20px solid var(--darkOrange);
+    border-top: 20px solid var(--darkGreen);
 
     color: var(--white);
-    background: var(--orange);
+    background: var(--green);
 }
 
 aside img {
-    max-height:80%; max-width:80%;
+    max-height:100%; max-width:100%;
 }
+textarea::-webkit-input-placeholder {
+  color: #757564;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #757564;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #757564;
+}
+
+textarea:-ms-input-placeholder {
+  color: #757564;
+}
+
+textarea::placeholder {
+  color: #757564;
+}
+
 
 /* Image row */
 .button-like-view {
@@ -88,7 +111,7 @@ aside img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--lightGray);
+  background-color: var(--lightDark);
 
 }
 .categoryLabelContent{
@@ -107,7 +130,7 @@ aside img {
 .arrowLink p{
   font-weight: bold;
   float: left;
-  color: var(--orange);
+  color: #e75542;
   transition: 0.3s;
 }
 .arrowLink p:hover{
@@ -124,7 +147,6 @@ nav ul {
 }
 
 .borderRadius {
-
     width: 90%;
     padding: 25px 2%;
     margin: 15px;
@@ -133,18 +155,7 @@ nav ul {
     font-weight: bold;
 
     color: var(--white);
-    background: var(--orange);
-}
-.borderAside{
-  width: 100%;
-  padding: 25px 0px;
-  /*margin: 15px;*/
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-
-  color: var(--white);
-  background: var(--orange);
+    background: var(--green);
 }
 .borderAside{
   width: 100%;
@@ -156,16 +167,25 @@ nav ul {
 
   color: var(--white);
   background: var(--green);
+  text-decoration: none;
 }
 
+.borderAside a{
+  text-decoration: none;
+}
+
+.borderAside a:hover{
+  text-decoration: underline;
+  color: #887c7c;
+}
 nav a:hover {
     text-decoration: underline;
-    background: var(--darkOrange);
+    background: var(--darkGreen);
 }
 
 #logo {
     float: left;
-    color: var(--orange);
+    color: var(--green);
     text-decoration: none;
 }
 #logo h1{
@@ -173,22 +193,21 @@ nav a:hover {
 }
 
 /* Contact form */
-#contactForm {
+form {
     display: grid;
 }
 
 label {
 	text-align: left;
-  margin: 10px;
-	font-size: 1em;
+    margin: 10px;
+	font-size: 1.4em;
 }
 
 .roundInput {
     padding: 12px 20px;
     display: inline-block;
-    border: 1px solid var(--lightGray);
+    border: 1px solid #ccc;
     box-sizing: border-box;
-    text-align: left;
 }
 
 .submit {
@@ -197,31 +216,43 @@ label {
     margin: 20px 0px 20px 0px;
     border: none;
 
-    background-color: var(--darkOrange);
+    background-color: var(--darkGreen);
     color: var(--white);
+}
+.submitComent {
+    width: 200px;
+    padding: 14px 20px;
+    margin: 20px 0px 20px 0px;
+    border: none;
+
+    background-color: var(--darkGreen);
+    color: var(--white);
+    float: right;
+    transition: .3s;
+}
+.submitComent:hover{
+  background-color: #75756d;
+
 }
 
 .borderRadius {
     border-radius: 5px;
 }
 
-h2, H3, H4, p, li, label {
+h2, H3, H4, p, li, span, label {
     color: var(--white);
 }
-.cursive {
-  font-style: italic;
+
+.articleAuthorHead{
+  text-align: center;
 }
-.bold{
-  font-weight: bold;
-}
-hr {
-  border-top: var(--white);
-}
+
 .highItem{
     width: 100%;
     position: relative;
     float:left;
     background-color: var(--orange);
+
 
     float: left;
     margin-top: 5px;
@@ -238,7 +269,7 @@ hr {
     background-repeat: no-repeat;
     background-size: 100%;
 
-    border-top: var(--darkOrange);
+    border-top: var(--darkGreen);
     border-width: 10px;
     border-radius: 1px;
 }
@@ -281,22 +312,56 @@ hr {
   transition: 0.4s;
   min-height: 150px;
   border-radius: 5px;
-  margin: 10px;
   float: left;
 }
 .hpArticle:hover{
   opacity: 0.8;
-  background: var(--orange);
+  background: #e75542;
 }
 .hpArticle:hover .hpImage{
   opacity: 0.7;
 }
-
+.hpArticle:first-of-type{
+  margin-top: 50px;
+}
 .hpAside{
+  float: left;
+  margin-top: 20px;
+}
+.right{
+  float: right;
+  width: 100%;
+}
+.rightComent{
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+.autorData img{
+  width: 83%;
+}
+.autorData:hover{
+  opacity: 0.8;
+  background: #e75542;
+}
+
+.textArray{
   width: 100%;
   float: left;
-  margin: 20px;
-  padding: 10px;
+}
+.comentBorderRadius {
+    width: 90%;
+    padding: 25px 2%;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--white);
+    background: var(--green);
+}
+.textAreaComent{
+  min-width: 100%;
+  min-height: 110px;
 }
 
 
@@ -314,8 +379,21 @@ hr {
         width: 50%;
         float: left;
     }
+    .right{
+      width: 39%;
+    }
+
     .rightColumn {
         width: 50%;
+        float: right;
+    }
+
+    .hpLeftColumn {
+        width: 30%;
+        float: left;
+    }
+    .hpRightColumn {
+        width: 70%;
         float: right;
     }
     .rightColumn h2{
@@ -323,6 +401,9 @@ hr {
     }
     .leftColumn h2{
       margin-left: 10px;
+    }
+    .articleComent{
+      margin-top: 50px;
     }
 
     .highItem {
@@ -333,13 +414,14 @@ hr {
     }
 
     .borderRadius {
+        max-width: 23%;
         padding: 25px 1%;
     }
 
     article {
         float: left;
+        width: 57%;
     }
-
     .hpArticleContainer {
         width: 70%;
         float: left;
@@ -347,36 +429,39 @@ hr {
 
     aside {
         float: right;
-        padding: 10px;
-        width: calc(28% - 40px);
+        width: 28%;
     }
 
     .detailArticleContainer{
       margin-top: 50px;
-      margin-bottom: 50px;
-      display: flex;
     }
 
     .hpAside{
-      width: calc(28% - 40px);
-      float: right;
+      width: 22%;
       border-radius: 5px;
+      margin-left: 11px;
+      
+      margin-top: 50px;
       height: fit-content;
-
       margin-top: 10px;
     }
 
     .wrapper {
         width: 1155px;
         margin-top: 20px;
+
         margin: 0 auto;
     }
     .button-like-view{
       width: 500px;
     }
-   
+
+    .borderAside{
+      margin-bottom: 30px;
+    }
     .roundInput{
       width: 100%;
+      float: left;
     }
     .submit{
       margin-left: 18px;
@@ -390,5 +475,20 @@ hr {
       width: 1155px;
       margin: 0 auto;
       padding-left: 100px;
+    }
+
+}
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background: #171717;
+	}
+
+    :root {
+        --darkGreen: #c43d3d;
+        --green: #e75542;
+        --white: #ccc
     }
 }
