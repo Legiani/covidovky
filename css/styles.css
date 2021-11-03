@@ -1,13 +1,24 @@
 @import url("./searchbar.css");
 
 :root {
+<<<<<<< HEAD
     --darkGreen: #c43d3d;
     --green: #e75542;
     --white: #ffffff
+=======
+    --darkOrange: #c43d3d;
+    --orange: #e75542;
+    --white: #ccc;
+    --lightGray: #a9a9a9;
+    --black: #171717;
+    --lightBlack: #353535;
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
 }
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+
+    background: var(--black)
 }
 
 .wrapper {
@@ -24,13 +35,13 @@ img{
 
 main {
   /*  padding: 30px;*/
+<<<<<<< HEAD
     display: flex;
+=======
+    /*display: flex;*/
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
     min-height: 100%;
 
-}
-
-aside {
-    padding: 0px 5% 10px;
 }
 
 footer {
@@ -46,14 +57,14 @@ footer {
 
 footer,
 aside {
-    border-top: 20px solid var(--darkGreen);
+    border-top: 20px solid var(--darkOrange);
 
     color: var(--white);
-    background: var(--green);
+    background: var(--orange);
 }
 
 aside img {
-    max-height:100%; max-width:100%;
+    max-height:80%; max-width:80%;
 }
 
 /* Image row */
@@ -83,6 +94,38 @@ aside img {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+.categoryLabel{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightGray);
+
+}
+.categoryLabelContent{
+    float: left;
+}
+.arrow{
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/arrow.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 16px 0px;
+}
+
+.arrowLink p{
+  font-weight: bold;
+  float: left;
+  color: var(--orange);
+  transition: 0.3s;
+}
+.arrowLink p:hover{
+  color: #121212;
+}
 
 /* Menu */
 header a {
@@ -103,7 +146,18 @@ nav ul {
     font-weight: bold;
 
     color: var(--white);
-    background: var(--green);
+    background: var(--orange);
+}
+.borderAside{
+  width: 100%;
+  padding: 25px 0px;
+  /*margin: 15px;*/
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: var(--white);
+  background: var(--orange);
 }
 .borderAside{
   width: 100%;
@@ -119,12 +173,12 @@ nav ul {
 
 nav a:hover {
     text-decoration: underline;
-    background: var(--darkGreen);
+    background: var(--darkOrange);
 }
 
 #logo {
     float: left;
-    color: var(--green);
+    color: var(--orange);
     text-decoration: none;
 }
 #logo h1{
@@ -132,21 +186,22 @@ nav a:hover {
 }
 
 /* Contact form */
-form {
+#contactForm {
     display: grid;
 }
 
 label {
 	text-align: left;
-    margin: 10px;
-	font-size: 1.4em;
+  margin: 10px;
+	font-size: 1em;
 }
 
 .roundInput {
     padding: 12px 20px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid var(--lightGray);
     box-sizing: border-box;
+    text-align: left;
 }
 
 .submit {
@@ -155,7 +210,7 @@ label {
     margin: 20px 0px 20px 0px;
     border: none;
 
-    background-color: var(--darkGreen);
+    background-color: var(--darkOrange);
     color: var(--white);
 }
 
@@ -163,19 +218,33 @@ label {
     border-radius: 5px;
 }
 
-h2, H3, H4, p, li {
+h2, H3, H4, p, li, label {
     color: var(--white);
 }
-
-
+.cursive {
+  font-style: italic;
+}
+.bold{
+  font-weight: bold;
+}
+hr {
+  border-top: var(--white);
+}
 .highItem{
     width: 100%;
     position: relative;
     float:left;
+<<<<<<< HEAD
     background-color: var(--green);
 
     float: left;
     /*margin: 2%;*/
+=======
+    background-color: var(--orange);
+
+    float: left;
+    margin-top: 5px;
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
     padding-top: 235px;
 
     -webkit-transition: margin 0.3s ease-out;
@@ -189,9 +258,13 @@ h2, H3, H4, p, li {
     background-repeat: no-repeat;
     background-size: 100%;
 
-    border-top: var(--darkGreen);
+    border-top: var(--darkOrange);
     border-width: 10px;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+    border-radius: 1px;
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
 }
 .firstHighItem{
   margin-top: 50px;
@@ -199,7 +272,7 @@ h2, H3, H4, p, li {
 
 .highItem:hover {
     cursor:pointer;
-    margin-top: -8px;
+    margin-top: 5px;
 }
 
 .highItem h2, p {
@@ -223,6 +296,36 @@ h2, H3, H4, p, li {
   font-style: italic;
   display: block;
 }
+<<<<<<< HEAD
+=======
+.hpNewws{
+  float: left;
+  width: 100% !important;
+  margin: 0 auto;
+}
+.hpArticle{
+  transition: 0.4s;
+  min-height: 150px;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+}
+.hpArticle:hover{
+  opacity: 0.8;
+  background: var(--orange);
+}
+.hpArticle:hover .hpImage{
+  opacity: 0.7;
+}
+
+.hpAside{
+  width: 100%;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+}
+
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
 
 
 /* Computer view */
@@ -238,11 +341,21 @@ h2, H3, H4, p, li {
         width: 50%;
         float: left;
     }
-
     .rightColumn {
         width: 50%;
         float: right;
     }
+<<<<<<< HEAD
+=======
+    .hpLeftColumn {
+        width: 30%;
+        float: left;
+    }
+    .hpRightColumn {
+        width: 70%;
+        float: right;
+    }
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
     .rightColumn h2{
       margin-left: 10px;
     }
@@ -253,38 +366,72 @@ h2, H3, H4, p, li {
     .highItem {
         width: 31.33%;
         margin: 1%;
+        border-radius: 10px;
+        margin-top: 25px;
     }
 
     .borderRadius {
-        max-width: 23%;
         padding: 25px 1%;
     }
 
     article {
         float: left;
-        width: 57%;
+    }
+
+    .hpArticleContainer {
+        width: 70%;
+        float: left;
     }
 
     aside {
         float: right;
+<<<<<<< HEAD
         width: 28%; 
+=======
+        padding: 10px;
+        width: calc(28% - 40px);
+    }
+
+    .detailArticleContainer{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+    }
+
+    .hpAside{
+      width: calc(28% - 40px);
+      float: right;
+      border-radius: 5px;
+      height: fit-content;
+
+      margin-top: 10px;
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
     }
 
     .wrapper {
         width: 1155px;
+<<<<<<< HEAD
+=======
+        margin-top: 20px;
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
         margin: 0 auto;
     }
     .button-like-view{
       width: 500px;
     }
+<<<<<<< HEAD
     .borderAside{
       width: 39%;
     }
+=======
+   
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
     .roundInput{
       width: 100%;
     }
     .submit{
       margin-left: 18px;
+<<<<<<< HEAD
 
     }
 
@@ -304,4 +451,17 @@ h2, H3, H4, p, li {
         --green: #e75542;
         --white: #ccc
     }
+=======
+
+    }
+    .categoryLabel{
+      justify-content: flex-start;
+
+    }
+    .categoryTextContainer{
+      width: 1155px;
+      margin: 0 auto;
+      padding-left: 100px;
+    }
+>>>>>>> c4dc8fee0e17362f12b623d3612849dd22ed8d98
 }
