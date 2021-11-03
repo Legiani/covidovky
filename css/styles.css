@@ -1,10 +1,13 @@
 @import url("./searchbar.css");
 
 :root {
-    --darkGreen: #c43d3d;
-    --green: #e75542;
-    --white: #ffffff;
-    --lightDark: #a9a9a9;
+    --darkOrange: #c43d3d;
+    --orange: #e75542;
+    --white: #ccc;
+    --lightGray: #a9a9a9;
+    --black: #171717;
+    --lightBlack: #353535;
+
 }
 
 body {
@@ -24,10 +27,7 @@ img{
 }
 
 main {
-  /*  padding: 30px;*/
-    /*display: flex;*/
     min-height: 100%;
-
 }
 
 aside {
@@ -251,7 +251,8 @@ h2, H3, H4, p, li, span, label {
     width: 100%;
     position: relative;
     float:left;
-    background-color: var(--green);
+    background-color: var(--orange);
+
 
     float: left;
     margin-top: 5px;
@@ -386,6 +387,7 @@ h2, H3, H4, p, li, span, label {
         width: 50%;
         float: right;
     }
+
     .hpLeftColumn {
         width: 30%;
         float: left;
@@ -438,18 +440,22 @@ h2, H3, H4, p, li, span, label {
       width: 22%;
       border-radius: 5px;
       margin-left: 11px;
+      
       margin-top: 50px;
       height: fit-content;
-      padding: 0px 3% 10px;
+      margin-top: 10px;
     }
 
     .wrapper {
         width: 1155px;
+        margin-top: 20px;
+
         margin: 0 auto;
     }
     .button-like-view{
       width: 500px;
     }
+
     .borderAside{
       margin-bottom: 30px;
     }
@@ -470,8 +476,6 @@ h2, H3, H4, p, li, span, label {
       margin: 0 auto;
       padding-left: 100px;
     }
-
-
 
 }
 
