@@ -1,14 +1,18 @@
 @import url("./searchbar.css");
 
 :root {
-    --darkGreen: #c43d3d;
-    --green: #e75542;
-    --white: #ffffff;
-    --lightDark: #a9a9a9;
+    --darkOrange: #c43d3d;
+    --orange: #e75542;
+    --white: #ccc;
+    --lightGray: #a9a9a9;
+    --black: #171717;
+    --lightBlack: #353535;
 }
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+
+    background: var(--black)
 }
 
 .wrapper {
@@ -43,10 +47,10 @@ footer {
 
 footer,
 aside {
-    border-top: 20px solid var(--darkGreen);
+    border-top: 20px solid var(--darkOrange);
 
     color: var(--white);
-    background: var(--green);
+    background: var(--orange);
 }
 
 aside img {
@@ -87,7 +91,7 @@ aside img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--lightDark);
+  background-color: var(--lightGray);
 
 }
 .categoryLabelContent{
@@ -106,7 +110,7 @@ aside img {
 .arrowLink p{
   font-weight: bold;
   float: left;
-  color: #e75542;
+  color: var(--orange);
   transition: 0.3s;
 }
 .arrowLink p:hover{
@@ -132,7 +136,7 @@ nav ul {
     font-weight: bold;
 
     color: var(--white);
-    background: var(--green);
+    background: var(--orange);
 }
 .borderAside{
   width: 100%;
@@ -143,17 +147,17 @@ nav ul {
   font-weight: bold;
 
   color: var(--white);
-  background: var(--green);
+  background: var(--orange);
 }
 
 nav a:hover {
     text-decoration: underline;
-    background: var(--darkGreen);
+    background: var(--darkOrange);
 }
 
 #logo {
     float: left;
-    color: var(--green);
+    color: var(--orange);
     text-decoration: none;
 }
 #logo h1{
@@ -174,7 +178,7 @@ label {
 .roundInput {
     padding: 12px 20px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid var(--lightGray);
     box-sizing: border-box;
     text-align: left;
 }
@@ -185,7 +189,7 @@ label {
     margin: 20px 0px 20px 0px;
     border: none;
 
-    background-color: var(--darkGreen);
+    background-color: var(--darkOrange);
     color: var(--white);
 }
 
@@ -199,6 +203,9 @@ h2, H3, H4, p, li, label {
 .cursive {
   font-style: italic;
 }
+.bold{
+  font-weight: bold;
+}
 hr {
   border-top: var(--white);
 }
@@ -206,7 +213,7 @@ hr {
     width: 100%;
     position: relative;
     float:left;
-    background-color: var(--green);
+    background-color: var(--orange);
 
     float: left;
     margin-top: 5px;
@@ -223,7 +230,7 @@ hr {
     background-repeat: no-repeat;
     background-size: 100%;
 
-    border-top: var(--darkGreen);
+    border-top: var(--darkOrange);
     border-width: 10px;
     border-radius: 1px;
 }
@@ -271,15 +278,16 @@ hr {
 }
 .hpArticle:hover{
   opacity: 0.8;
-  background: #e75542;
+  background: var(--orange);
 }
 .hpArticle:hover .hpImage{
   opacity: 0.7;
 }
 
 .hpAside{
+  width: 100%;
   float: left;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
 
@@ -332,10 +340,6 @@ hr {
         float: left;
     }
 
-    .autorProfile {
-      width: 57%;
-    }
-
     .hpArticleContainer {
         width: 70%;
         float: left;
@@ -344,7 +348,7 @@ hr {
     aside {
         float: right;
         padding: 10px;
-        width: calc(28% - 20px);
+        width: calc(28% - 40px);
     }
 
     .detailArticleContainer{
@@ -354,7 +358,7 @@ hr {
     }
 
     .hpAside{
-      width: calc(28% - 20px);
+      width: calc(28% - 40px);
       float: right;
       border-radius: 5px;
       height: fit-content;
@@ -364,14 +368,13 @@ hr {
 
     .wrapper {
         width: 1155px;
+        margin-top: 20px;
         margin: 0 auto;
     }
     .button-like-view{
       width: 500px;
     }
-    .borderAside{
-      width: 39%;
-    }
+   
     .roundInput{
       width: 100%;
     }
@@ -387,22 +390,5 @@ hr {
       width: 1155px;
       margin: 0 auto;
       padding-left: 100px;
-    }
-
-
-
-}
-
-
-
-@media screen and (prefers-color-scheme: dark) {
-	body {
-		background: #171717;
-	}
-
-    :root {
-        --darkGreen: #c43d3d;
-        --green: #e75542;
-        --white: #ccc
     }
 }

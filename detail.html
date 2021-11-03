@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    </head>
     <body>
       <header class="margin10">
           <div class="wrapper">
@@ -56,7 +56,7 @@
       </div>
       <main>
         <div class="main wrapper">
-          <div class="detailArticleContainer">
+          <div class="hpArticleContainer">
             <article>
                 <section id="menuOne" class="newDetailText">
                     <h2>Další dluhopisový průšvih, České Lithium nemá na splátky dluhů</h2>
@@ -75,39 +75,53 @@
                     </ul>
                 </section>
             </article>
+            <hr>
 
-            <aside class="borderAside">
-                <h3>Arca Investments</h3>
-                <figure>
-                    <img src="https://www.arcacapital.com/public/img/og/og.jpg" alt="arcacapital logo">
-                    <figcaption>Logo investiční skupiny Arca Investments</figcaption>
-                </figure>
-
-                <p>Arca Investments je slovensko-česká investiční skupina. Do jejího portfolia spadá více než 200 firem, které jsou aktivní mj. ve finančnictví, energetice nebo realitách.</p>
-            </aside>
-          </div>
-
-        <hr>
-
-          <div id="commentView">
-            <h3>Komentáře</h3>
-            <div class="profile">
-              <h2>Kuba <span class="cursive">(napsal/a)</span></h2>
-              <p>
-                  Vyvojár a vbsdhbv sdjbv dv kjwdbv s iusn msfwiu ms kuf jnej zisukh nsfh bw jiw bkjwf,nsk hcm bw bwk wdbj ,bks bkjsf
-              </p>
+            <div id="commentView">
+              <h3>Komentáře</h3>
+              <div id="comentContainer">
+                <div class="profile">
+                  <p><span class="bold">Kuba</span> <span class="cursive">(napsal/a)</span></p>
+                  <p>
+                      Vyvojár a vbsdhbv sdjbv dv kjwdbv s iusn msfwiu ms kuf jnej zisukh nsfh bw jiw bkjwf,nsk hcm bw bwk wdbj ,bks bkjsf
+                  </p>
+                </div>
+              </div>
+  
+              <h3>Noví komentář</h3>
+              <form id="commentForm" method="post">
+                <label>Uživatel</label>
+                <input class="roundInput borderRadius" name="jméno" placeholder="derpos" required="true" id="commentInput">
+                <label>Komentář</label>
+                <textarea class="roundInput borderRadius"  name="podnět" placeholder="Text vaší zprávy..." rows="7" cols="20" required="true" id="commentArea"></textarea>
+                <button class="submit borderRadius" type="submit" id="comentBtn">Odeslat</button>
+              </form>
+  
             </div>
-
-            <h3>Noví komentář</h3>
-            <form action="bez php" id="commentForm" method="post">
-              <label>Uživatel</label>
-              <input class="roundInput borderRadius" type="email" name="email" placeholder="derpos" required="true">
-              <label>Komentář</label>
-              <textarea class="roundInput borderRadius"  name="email" placeholder="Text vaší zprávy..." rows="7" cols="20" required="true"></textarea>
-              <input class="submit borderRadius" type="submit" value="Odeslat">
-            </form>
-
+            
           </div>
+
+          <aside class="hpAside">
+            <h3 class="articleAuthorHead">Autor článku</h3>
+            <a href="./aboat.html" rel="Redakce">
+              <div class="autorData">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYy0GP1rpOKxOH3BXg2V68-msXVgresTPCA&usqp=CAU" alt="Obrazek zmíněného autora">
+                <h3>Michal</h3>
+                <p>Zajímám se o burzy a sport.</p>
+              </div>
+            </a>
+          </aside>
+
+          <aside class="hpAside">
+              <h3>Arca Investments</h3>
+              <figure>
+                  <img src="https://www.arcacapital.com/public/img/og/og.jpg" alt="arcacapital logo">
+                  <figcaption>Logo investiční skupiny Arca Investments</figcaption>
+              </figure>
+
+              <p>Arca Investments je slovensko-česká investiční skupina. Do jejího portfolia spadá více než 200 firem, které jsou aktivní mj. ve finančnictví, energetice nebo realitách.</p>
+          </aside>
+        
         </div>
       </main>
       <footer>
@@ -124,3 +138,22 @@
       </footer>
     </body>
 </html>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $("#comentBtn").click(function(){
+       var name = $("#commentInput").val();
+       var text = $('#commentArea').val();
+       var html = '<div class="profile"><p><span class="bold">';
+       html += name + '</span><span class="cursive"> (napsal/a)</span></p><p>';
+       html += text + '</p></div>';
+       $('#comentContainer').append( html );
+       $('#commentInput').val('');
+       $('#commentArea').val('');
+
+     });
+
+  });
+</script>
