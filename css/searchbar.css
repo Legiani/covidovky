@@ -46,11 +46,11 @@
         width: 0px;
     }
     .search-box:hover > .search-input{
-        width: 240px;
+        width: 150px;
         margin: 0px 8px;
     }
     .search-input:focus{
-        width: 200px;
+        width: 150px;
         margin: 0px 8px;
     }
     .search-box:hover > .search-btn{

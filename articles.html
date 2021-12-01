@@ -14,26 +14,42 @@
     </head>
     <body>
       <header class="margin10">
-          <div class="wrapper">
-              <div>
-                  <a id="logo" href="./index.html">
-                      <h1 class="logo">Cancovinky</h1>
-                      <p class="active">Studnetský projekt (nejedná se o realnou stránku!!!)</p>
-                  </a>
-              </div>
-              <nav>
-                  <a href="./index.html" class="borderRadius">Domů</a>
-                  <a href="./articles.html" class="borderRadius">Články</a>
-                  <a href="./aboat.html" class="borderRadius">Redakce</a>
-                  <div class="search-box ">
-                      <a href="#" class="search-btn">
-                          <i class="fas fa-search"></i>
-                      </a>
-                      <input class="search-input" type="text" name="" placeholder="Hledat">
+        <div class="wrapper">
+            <div>
+                <a id="logo" href="./index.html">
+                    <h1 class="logo">Cancovinky</h1>
+                    <p class="active">Studnetský projekt (nejedná se o realnou stránku!!!)</p>
+                </a>
+            </div>
+            <div class="search-box ">
+              <a href="#" class="search-btn">
+                  <i class="fas fa-search"></i>
+              </a>
+              <input class="search-input" type="text" name="" placeholder="Hledat">
+            </div>
+            <nav> 
+              <div class="topnav" id="myTopnav">
+                <a href="./index.html">Domů</a>
+                <div class="dropdown active">
+                  <button class="dropbtn">Články 
+                    
+                      <i class="fa fa-caret-down"></i>
+                    
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./articles.html">Sport</a>
+                    <a href="./detail.html">Ekonomika</a>
+                    <a href="./detail.html">Článek</a>
                   </div>
-              </nav>
-          </div>
-      </header>
+                </div> 
+                <a href="./aboat.html">Redakce</a>
+                
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+            </nav>
+        </div>
+       
+    </header>
       <div class="categoryLabel">
         <div class="categoryTextContainer">
           <div class="categoryLabelContent">
