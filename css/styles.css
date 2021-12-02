@@ -123,7 +123,6 @@ header a {
 }
 .topnav {
   overflow: hidden;
-  background-color: #333;
 }
 
 .topnav a {
@@ -137,6 +136,7 @@ header a {
 }
 
 .active {
+  border-radius: 5px;
   background-color:var(--darkOrange);
   color: white;
 }
@@ -153,6 +153,7 @@ header a {
 .dropdown .dropbtn {
   font-size: 17px;    
   border: none;
+  border-radius: 5px;
   outline: none;
   color: white;
   padding: 14px 16px;
@@ -162,6 +163,7 @@ header a {
 }
 
 .dropdown-content {
+  border-radius: 5px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -171,6 +173,7 @@ header a {
 }
 
 .dropdown-content a {
+  border-radius: 5px;
   float: none;
   color: black;
   padding: 12px 16px;
@@ -180,16 +183,19 @@ header a {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
+  border-radius: 5px;
   background-color: #555;
   color: white;
 }
 
 .dropdown-content a:hover {
+  border-radius: 5px;
   background-color: #ddd;
   color: black;
 }
 
 .dropdown:hover .dropdown-content {
+  border-radius: 5px;
   display: block;
 }
 
